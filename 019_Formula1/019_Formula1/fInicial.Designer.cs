@@ -285,6 +285,7 @@
             this.btnVerClasificacions.TabIndex = 97;
             this.btnVerClasificacions.Text = "Ver Clasificacións";
             this.btnVerClasificacions.UseVisualStyleBackColor = true;
+            this.btnVerClasificacions.Click += new System.EventHandler(this.btnVerClasificacions_Click);
             // 
             // Label1
             // 
@@ -332,7 +333,7 @@
             this.Controls.Add(this.lbxResultado);
             this.Name = "fInicial";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.fInicial_Load_1);
+            this.Load += new System.EventHandler(this.fInicial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.gbxCircuitos.ResumeLayout(false);
