@@ -39,6 +39,8 @@ namespace _020_Eurocopa
                                                {"Ucrania",""} };
         int[] aGrupo1 = new int[10];
         int[] aGrupo2 = new int[10];
+        int nXornada = 0;
+        int nPartido = 0;
 
         int[,] aCalendario = new int[90, 4];
 
@@ -65,6 +67,7 @@ namespace _020_Eurocopa
             int rEquipos = 0;
             lbxGrupo1.Items.Clear();
             lbxGrupo2.Items.Clear();
+            int nXornada = 0;
 
             for (int i = 0; i < aEquipos.GetLength(0);)
             {
@@ -90,18 +93,67 @@ namespace _020_Eurocopa
                     }
                 }
             }
-
+            btGrupos.Enabled = false;
+            btCalendario.Enabled = true;
         }
 
         private void btCalendario_Click(object sender, EventArgs e)
         {
+            btGrupos.Enabled = false;
+            nXornada = 1;
+            XerarCrucesXornada(1, aGrupo1);
+            XerarCrucesXornada(2, aGrupo2);
+            // antes de xerar a seguinte xornada hai que cambiar
+            // os arrrays aGrupo1 a aGrupo2
+
+            for (nXornada = 2; nXornada < 10; nXornada++)
+            {
+                int temporalP9G1 = aGrupo1[9];
+                int temporalP9G2 = aGrupo2[9];
+                for (int i = 9; i > 1; i--)
+                {
+                    aGrupo1[i] = aGrupo1[i - 1];
+                    aGrupo2[i] = aGrupo2[i - 1];
+                }
+
+                aGrupo1[1] = temporalP9G1;
+                aGrupo2[1] = temporalP9G2;
+
+                XerarCrucesXornada(1, aGrupo1);
+                XerarCrucesXornada(2, aGrupo2);
+            }
+
+            // ver en listbox as xornadas
+
+            for(int i = 0; i < aCalendario.GetLength(0); i++)
+            {
+                if (i % 10 == 0)
+                {
+                    lbxCalendarioG1.Items.Add("---------");
+                    lbxCalendarioG1.Items.Add("xornada " + aCalendario[i, 0]);
+                    lbxCalendarioG1.Items.Add("---------");
+
+                    lbxCalendarioG2.Items.Add("---------");
+                    lbxCalendarioG2.Items.Add("xornada " + aCalendario[i, 0]);
+                    lbxCalendarioG2.Items.Add("---------");
+                }
+
+                lbxCalendarioG1.Items.Add(aEquipos[aCalendario[i, 2], 1] + "\t" + aEquipos[aCalendario[i, 3], 1]);
+                lbxCalendarioG2.Items.Add(aEquipos[aCalendario[i, 2], 1] + "\t" + aEquipos[aCalendario[i, 3], 1]);
+
+            }
 
         }
 
-        private void revolverEquipos(int[] aGrupo)
+        private void XerarCrucesXornada(int grupo, int[] aGrupo)
         {
-            for (int i = 1; i < aGrupo.GetLength(1); i++)
+            for (int i = 0; i < 5; i++)
             {
+                aCalendario[nPartido , 0] = nXornada;
+                aCalendario[nPartido , 1] = grupo;
+                aCalendario[nPartido , 2] = aGrupo[i];
+                aCalendario[nPartido , 3] = aGrupo[9-i];
+                nPartido++;
 
             }
         }
