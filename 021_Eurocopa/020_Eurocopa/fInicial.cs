@@ -55,6 +55,7 @@ namespace _020_Eurocopa
             }
 
             btGrupos.Enabled = true;
+            btCalendario.Enabled = true;
 
         }
 
@@ -62,8 +63,10 @@ namespace _020_Eurocopa
         {
             Random r = new Random();
             int rEquipos = 0;
+            lbxGrupo1.Items.Clear();
+            lbxGrupo2.Items.Clear();
 
-            for (int i = 0; i < aEquipos.GetLength(0); i++)
+            for (int i = 0; i < aEquipos.GetLength(0);)
             {
                 rEquipos = r.Next(0, 20);
 
@@ -76,9 +79,10 @@ namespace _020_Eurocopa
                         i++;
                     }
                     
-                } else
+                }
+                else
                 {
-                   if (Array.IndexOf(aGrupo2, rEquipos, 0, i) == -1 && Array.IndexOf(aGrupo2, rEquipos, 0, i-10) == -1)
+                   if (Array.IndexOf(aGrupo1, rEquipos, 0, 1) == -1 && Array.IndexOf(aGrupo2, rEquipos, 0, i - 10) == -1)
                     {
                         aGrupo2[i-10] = rEquipos;
                         lbxGrupo2.Items.Add(aEquipos[rEquipos, 1] + "\t" + aEquipos[rEquipos, 0]);
@@ -87,6 +91,19 @@ namespace _020_Eurocopa
                 }
             }
 
+        }
+
+        private void btCalendario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void revolverEquipos(int[] aGrupo)
+        {
+            for (int i = 1; i < aGrupo.GetLength(1); i++)
+            {
+
+            }
         }
 
     }

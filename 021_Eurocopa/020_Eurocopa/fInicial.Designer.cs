@@ -76,7 +76,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(544, 263);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(182, 26);
+            this.label5.Size = new System.Drawing.Size(181, 26);
             this.label5.TabIndex = 25;
             this.label5.Text = "calendario G2";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -89,7 +89,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(342, 263);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(182, 26);
+            this.label4.Size = new System.Drawing.Size(181, 26);
             this.label4.TabIndex = 24;
             this.label4.Text = "calendario G1";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -102,7 +102,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(544, 46);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 26);
+            this.label3.Size = new System.Drawing.Size(181, 26);
             this.label3.TabIndex = 23;
             this.label3.Text = "Grupo 2";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -115,7 +115,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(342, 46);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(182, 26);
+            this.label2.Size = new System.Drawing.Size(181, 26);
             this.label2.TabIndex = 22;
             this.label2.Text = "Grupo 1";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -128,7 +128,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(10, 152);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 26);
+            this.label1.Size = new System.Drawing.Size(181, 26);
             this.label1.TabIndex = 21;
             this.label1.Text = "equipos participantes";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -163,6 +163,7 @@
             this.btCalendario.TabIndex = 18;
             this.btCalendario.Text = "xerar calendario";
             this.btCalendario.UseVisualStyleBackColor = true;
+            this.btCalendario.Click += new System.EventHandler(this.btCalendario_Click);
             // 
             // lbxGrupo2
             // 
@@ -206,7 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(753, 534);
+            this.ClientSize = new System.Drawing.Size(751, 542);
             this.Controls.Add(this.btGrupos);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
