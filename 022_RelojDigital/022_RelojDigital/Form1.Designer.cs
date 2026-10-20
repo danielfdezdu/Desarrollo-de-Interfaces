@@ -39,11 +39,14 @@
             this.lblReloj.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblReloj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReloj.ForeColor = System.Drawing.Color.Lime;
-            this.lblReloj.Location = new System.Drawing.Point(-2, 0);
+            this.lblReloj.Location = new System.Drawing.Point(10, 10);
             this.lblReloj.Name = "lblReloj";
             this.lblReloj.Size = new System.Drawing.Size(71, 20);
             this.lblReloj.TabIndex = 0;
             this.lblReloj.Text = "00:00:00";
+            this.lblReloj.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblReloj_MouseDown);
+            this.lblReloj.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblReloj_MouseMove);
+            this.lblReloj.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lblReloj_MouseUp);
             // 
             // timer1
             // 
@@ -53,11 +56,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(68, 20);
+            this.ClientSize = new System.Drawing.Size(90, 40);
             this.ControlBox = false;
             this.Controls.Add(this.lblReloj);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

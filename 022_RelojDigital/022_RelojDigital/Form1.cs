@@ -17,9 +17,41 @@ namespace _022_RelojDigital
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+        }
+
         private void actualizarReloj(object sender, EventArgs e)
         {
             lblReloj.Text = DateTime.Now.ToString("HH:mm:ss");
         }
+
+        #region "// metodo 1"
+        // mover un formulario sin borde
+        // -----------------------------------------------
+
+        bool movimiento = true;
+
+        private void lblReloj_MouseDown(object sender, MouseEventArgs e)
+        {
+            movimiento = true;
+        }
+
+        private void lblReloj_MouseUp(object sender, MouseEventArgs e)
+        {
+            movimiento = false;
+        }
+
+        private void lblReloj_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (movimiento)
+            {
+                this.Location = Cursor.Position;
+            }
+        }
+
+        #endregion
+
     }
 }

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "022_Tragaperras", "022_Tragaperras\022_Tragaperras.csproj", "{F898FDB6-D992-46CD-8579-2EE4A6D77CB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F898FDB6-D992-46CD-8579-2EE4A6D77CB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F898FDB6-D992-46CD-8579-2EE4A6D77CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F898FDB6-D992-46CD-8579-2EE4A6D77CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F898FDB6-D992-46CD-8579-2EE4A6D77CB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
