@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "022_RelojDigital", "022_RelojDigital\022_RelojDigital.csproj", "{495F164D-2B4A-4F96-9422-5BCF9EC7C7A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{495F164D-2B4A-4F96-9422-5BCF9EC7C7A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495F164D-2B4A-4F96-9422-5BCF9EC7C7A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495F164D-2B4A-4F96-9422-5BCF9EC7C7A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495F164D-2B4A-4F96-9422-5BCF9EC7C7A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

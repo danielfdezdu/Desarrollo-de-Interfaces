@@ -138,9 +138,14 @@ namespace _020_Eurocopa
                     lbxCalendarioG2.Items.Add("---------");
                 }
 
-                lbxCalendarioG1.Items.Add(aEquipos[aCalendario[i, 2], 1] + "\t" + aEquipos[aCalendario[i, 3], 1]);
-                lbxCalendarioG2.Items.Add(aEquipos[aCalendario[i, 2], 1] + "\t" + aEquipos[aCalendario[i, 3], 1]);
-
+                if (aCalendario[i, 1] == 1)
+                {
+                    lbxCalendarioG1.Items.Add(aEquipos[aCalendario[i, 2], 1] + "\t" + aEquipos[aCalendario[i, 3], 1]);
+                }
+                else
+                {
+                    lbxCalendarioG2.Items.Add(aEquipos[aCalendario[i, 2], 1] + "\t" + aEquipos[aCalendario[i, 3], 1]);
+                }
             }
 
         }
