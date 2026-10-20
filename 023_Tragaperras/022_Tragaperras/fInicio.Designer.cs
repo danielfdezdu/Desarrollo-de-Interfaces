@@ -102,6 +102,7 @@
             this.bt20.Size = new System.Drawing.Size(65, 65);
             this.bt20.TabIndex = 3;
             this.bt20.UseVisualStyleBackColor = false;
+            this.bt20.Click += new System.EventHandler(this.Monedero);
             // 
             // bt50
             // 
@@ -111,6 +112,7 @@
             this.bt50.Size = new System.Drawing.Size(65, 65);
             this.bt50.TabIndex = 2;
             this.bt50.UseVisualStyleBackColor = true;
+            this.bt50.Click += new System.EventHandler(this.Monedero);
             // 
             // bt01
             // 
@@ -120,6 +122,7 @@
             this.bt01.Size = new System.Drawing.Size(65, 65);
             this.bt01.TabIndex = 1;
             this.bt01.UseVisualStyleBackColor = true;
+            this.bt01.Click += new System.EventHandler(this.Monedero);
             // 
             // bt02
             // 
@@ -130,6 +133,7 @@
             this.bt02.TabIndex = 0;
             this.bt02.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.bt02.UseVisualStyleBackColor = true;
+            this.bt02.Click += new System.EventHandler(this.Monedero);
             // 
             // gbPremios
             // 
@@ -186,6 +190,7 @@
             this.btXogar.TabIndex = 10;
             this.btXogar.Text = "XOGAR";
             this.btXogar.UseVisualStyleBackColor = false;
+            this.btXogar.Click += new System.EventHandler(this.btXogar_Click);
             // 
             // btAcumular
             // 
@@ -298,6 +303,7 @@
             // temporizador
             // 
             this.temporizador.Interval = 200;
+            this.temporizador.Tick += new System.EventHandler(this.temporizador_Tick);
             // 
             // fInicio
             // 

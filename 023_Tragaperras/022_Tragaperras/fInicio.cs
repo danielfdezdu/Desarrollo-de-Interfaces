@@ -33,6 +33,52 @@ namespace _022_Tragaperras
       
         Random r = new Random();
 
-       
+        int nXogadas = 0;
+        int nFruta1 = 0;
+        int nFruta2 = 0;
+        int nFruta3 = 0;
+
+        private void Monedero(object sender, EventArgs e)
+        {
+            
+            if (((Button)sender).Name == "bt20")
+            {
+                nXogadas += 2;
+            }
+            else if (((Button)sender).Name == "bt50")
+            {
+                nXogadas += 5;
+            }
+            else if (((Button)sender).Name == "bt1")
+            {
+                nXogadas += 10;
+            }
+            else if (((Button)sender).Name == "bt2")
+            {
+                nXogadas += 20;
+            }
+
+            lblXogadas.Text = nXogadas.ToString();
+            btXogar.Enabled = true;
+        }
+
+        private void btXogar_Click(object sender, EventArgs e)
+        {
+            nXogadas--;
+            lblXogadas.Text = nXogadas.ToString();
+
+            temporizador.Enabled = true;
+        }
+
+        private void temporizador_Tick(object sender, EventArgs e)
+        {
+            nFruta1 = r.Next(9);
+            pbFruta1.Image = Image.FromFile("D:\\Daniel_Fernández\\Desarrollo-de-Interfaces\\imagenes_tragaperras" + aFrutas[]);
+            nFruta2 = r.Next(9);
+            pbFruta2.Image = Image.FromFile("D:\\Daniel_Fernández\\Desarrollo-de-Interfaces\\imagenes_tragaperras" + aFrutas[]);
+            nFruta3 = r.Next(9);
+            pbFruta3.Image = Image.FromFile("D:\\Daniel_Fernández\\Desarrollo-de-Interfaces\\imagenes_tragaperras" + aFrutas[]);
+
+        }
     }
 }
