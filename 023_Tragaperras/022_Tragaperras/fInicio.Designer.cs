@@ -164,6 +164,7 @@
             this.btConvertir.TabIndex = 12;
             this.btConvertir.Text = "Convertir en Xogadas";
             this.btConvertir.UseVisualStyleBackColor = false;
+            this.btConvertir.Click += new System.EventHandler(this.btConvertir_Click);
             // 
             // btDeter
             // 
@@ -177,6 +178,7 @@
             this.btDeter.TabIndex = 11;
             this.btDeter.Text = "DETER";
             this.btDeter.UseVisualStyleBackColor = false;
+            this.btDeter.Click += new System.EventHandler(this.btDeter_Click);
             // 
             // btXogar
             // 
@@ -204,6 +206,7 @@
             this.btAcumular.TabIndex = 9;
             this.btAcumular.Text = "Acumular";
             this.btAcumular.UseVisualStyleBackColor = false;
+            this.btAcumular.Click += new System.EventHandler(this.btAcumular_Click);
             // 
             // btCobrarAcumulado
             // 
@@ -217,6 +220,7 @@
             this.btCobrarAcumulado.TabIndex = 8;
             this.btCobrarAcumulado.Text = "Cobrar Acumulado";
             this.btCobrarAcumulado.UseVisualStyleBackColor = false;
+            this.btCobrarAcumulado.Click += new System.EventHandler(this.btCobrarAcumulado_Click);
             // 
             // btCobrarPremio
             // 
@@ -230,6 +234,7 @@
             this.btCobrarPremio.TabIndex = 7;
             this.btCobrarPremio.Text = "Cobrar Premio";
             this.btCobrarPremio.UseVisualStyleBackColor = false;
+            this.btCobrarPremio.Click += new System.EventHandler(this.btCobrarPremio_Click);
             // 
             // lblAcumulado
             // 
