@@ -77,11 +77,11 @@ namespace _022_Tragaperras
         private void temporizador_Tick(object sender, EventArgs e)
         {
             nFruta1 = r.Next(9);
-            pbFruta1.Image = Image.FromFile("D:\\Daniel_Fernandez\\Desarrollo-de-Interfaces\\imagenes_tragaperras\\" + aFrutas[nFruta1]);
+            pbFruta1.Image = Image.FromFile("D:\\Daniel_Fernandez\\Desarrollo-de-Interfaces\\023_Tragaperras\\imagenes_tragaperras\\" + aFrutas[nFruta1]);
             nFruta2 = r.Next(9);
-            pbFruta2.Image = Image.FromFile("D:\\Daniel_Fernandez\\Desarrollo-de-Interfaces\\imagenes_tragaperras\\" + aFrutas[nFruta2]);
+            pbFruta2.Image = Image.FromFile("D:\\Daniel_Fernandez\\Desarrollo-de-Interfaces\\023_Tragaperras\\imagenes_tragaperras\\" + aFrutas[nFruta2]);
             nFruta3 = r.Next(9);
-            pbFruta3.Image = Image.FromFile("D:\\Daniel_Fernandez\\Desarrollo-de-Interfaces\\imagenes_tragaperras\\" + aFrutas[nFruta3]);
+            pbFruta3.Image = Image.FromFile("D:\\Daniel_Fernandez\\Desarrollo-de-Interfaces\\023_Tragaperras\\imagenes_tragaperras\\" + aFrutas[nFruta3]);
 
         }
 
