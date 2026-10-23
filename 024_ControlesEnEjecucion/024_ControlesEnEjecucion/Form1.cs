@@ -30,7 +30,7 @@ namespace _024_ControlesEnEjecucion
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           // Controls.Add(lbl_ejecucion);
+            // Controls.Add(lbl_ejecucion);
 
             for (int i = 0; i < 5; i++)
             {
@@ -44,6 +44,10 @@ namespace _024_ControlesEnEjecucion
                     }
                 );
             }
+        }
+
+        private void metodo_para_botones(object sender, EventArgs e)
+        {
 
         }
 
