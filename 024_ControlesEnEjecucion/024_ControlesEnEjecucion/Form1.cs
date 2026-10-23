@@ -30,26 +30,36 @@ namespace _024_ControlesEnEjecucion
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Controls.Add(lbl_ejecucion);
+             Controls.Add(lbl_ejecucion);
 
             for (int i = 0; i < 5; i++)
             {
-                Controls.Add(
-                    new Button
-                    {
-                        Name = "btn" + i,
-                        Text = "Botón Ejecución " + i,
-                        Size = new Size(250, 25),
-                        Location = new Point(300, 70 * i)
-                    }
-                );
+                Button miBoton = new Button
+                {
+                    Name = "btn" + i,
+                    Text = "Botón Ejecución " + i,
+                    Size = new Size(250, 25),
+                    Location = new Point(300, 70 * i)
+                };
+                Controls.Add(miBoton);
+                miBoton.Click += new System.EventHandler(metodo_para_botones);
+              
             }
         }
 
-        private void metodo_para_botones(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
 
+        private void metodo_para_botones(object sender, EventArgs e)
+        {
+            lbl_ejecucion.Text = "pulsado botón";
+
+            if (((Button)sender).Name == "btn0")
+            {
+
+            }
+        }
     }
 }
