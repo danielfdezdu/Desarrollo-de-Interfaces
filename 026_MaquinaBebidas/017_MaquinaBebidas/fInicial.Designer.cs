@@ -119,6 +119,7 @@
             this.btRecuperar.Size = new System.Drawing.Size(96, 40);
             this.btRecuperar.TabIndex = 336;
             this.btRecuperar.Text = "Recuperar Moedas";
+            this.btRecuperar.Click += new System.EventHandler(this.btRecuperar_Click);
             // 
             // gbCambio
             // 
@@ -165,7 +166,7 @@
             // 
             this.Label14.BackColor = System.Drawing.Color.Black;
             this.Label14.ForeColor = System.Drawing.Color.Lime;
-            this.Label14.Location = new System.Drawing.Point(215, 576);
+            this.Label14.Location = new System.Drawing.Point(229, 576);
             this.Label14.Name = "Label14";
             this.Label14.Size = new System.Drawing.Size(35, 16);
             this.Label14.TabIndex = 333;
@@ -176,7 +177,7 @@
             // 
             this.Label13.BackColor = System.Drawing.Color.Black;
             this.Label13.ForeColor = System.Drawing.Color.Lime;
-            this.Label13.Location = new System.Drawing.Point(215, 496);
+            this.Label13.Location = new System.Drawing.Point(229, 496);
             this.Label13.Name = "Label13";
             this.Label13.Size = new System.Drawing.Size(35, 16);
             this.Label13.TabIndex = 332;
@@ -187,7 +188,7 @@
             // 
             this.Label12.BackColor = System.Drawing.Color.Black;
             this.Label12.ForeColor = System.Drawing.Color.Lime;
-            this.Label12.Location = new System.Drawing.Point(215, 416);
+            this.Label12.Location = new System.Drawing.Point(229, 416);
             this.Label12.Name = "Label12";
             this.Label12.Size = new System.Drawing.Size(35, 16);
             this.Label12.TabIndex = 331;
@@ -198,7 +199,7 @@
             // 
             this.Label11.BackColor = System.Drawing.Color.Black;
             this.Label11.ForeColor = System.Drawing.Color.Lime;
-            this.Label11.Location = new System.Drawing.Point(215, 336);
+            this.Label11.Location = new System.Drawing.Point(229, 336);
             this.Label11.Name = "Label11";
             this.Label11.Size = new System.Drawing.Size(35, 16);
             this.Label11.TabIndex = 330;
@@ -209,7 +210,7 @@
             // 
             this.Label10.BackColor = System.Drawing.Color.Black;
             this.Label10.ForeColor = System.Drawing.Color.Lime;
-            this.Label10.Location = new System.Drawing.Point(215, 256);
+            this.Label10.Location = new System.Drawing.Point(229, 256);
             this.Label10.Name = "Label10";
             this.Label10.Size = new System.Drawing.Size(35, 16);
             this.Label10.TabIndex = 329;
@@ -220,7 +221,7 @@
             // 
             this.Label9.BackColor = System.Drawing.Color.Black;
             this.Label9.ForeColor = System.Drawing.Color.Lime;
-            this.Label9.Location = new System.Drawing.Point(215, 176);
+            this.Label9.Location = new System.Drawing.Point(229, 176);
             this.Label9.Name = "Label9";
             this.Label9.Size = new System.Drawing.Size(35, 16);
             this.Label9.TabIndex = 328;
@@ -231,7 +232,7 @@
             // 
             this.Label8.BackColor = System.Drawing.Color.Black;
             this.Label8.ForeColor = System.Drawing.Color.Lime;
-            this.Label8.Location = new System.Drawing.Point(215, 96);
+            this.Label8.Location = new System.Drawing.Point(229, 96);
             this.Label8.Name = "Label8";
             this.Label8.Size = new System.Drawing.Size(35, 16);
             this.Label8.TabIndex = 327;
@@ -244,7 +245,7 @@
             this.Label7.ForeColor = System.Drawing.Color.Lime;
             this.Label7.Location = new System.Drawing.Point(159, 576);
             this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(48, 16);
+            this.Label7.Size = new System.Drawing.Size(64, 16);
             this.Label7.TabIndex = 326;
             this.Label7.Text = "precio";
             this.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -255,7 +256,7 @@
             this.Label6.ForeColor = System.Drawing.Color.Lime;
             this.Label6.Location = new System.Drawing.Point(159, 496);
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(48, 16);
+            this.Label6.Size = new System.Drawing.Size(64, 16);
             this.Label6.TabIndex = 325;
             this.Label6.Text = "precio";
             this.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -266,7 +267,7 @@
             this.Label5.ForeColor = System.Drawing.Color.Lime;
             this.Label5.Location = new System.Drawing.Point(159, 416);
             this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(48, 16);
+            this.Label5.Size = new System.Drawing.Size(64, 16);
             this.Label5.TabIndex = 324;
             this.Label5.Text = "precio";
             this.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -277,7 +278,7 @@
             this.Label4.ForeColor = System.Drawing.Color.Lime;
             this.Label4.Location = new System.Drawing.Point(159, 336);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(48, 16);
+            this.Label4.Size = new System.Drawing.Size(64, 16);
             this.Label4.TabIndex = 323;
             this.Label4.Text = "precio";
             this.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -288,7 +289,7 @@
             this.Label3.ForeColor = System.Drawing.Color.Lime;
             this.Label3.Location = new System.Drawing.Point(159, 256);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(48, 16);
+            this.Label3.Size = new System.Drawing.Size(64, 16);
             this.Label3.TabIndex = 322;
             this.Label3.Text = "precio";
             this.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -299,7 +300,7 @@
             this.Label2.ForeColor = System.Drawing.Color.Lime;
             this.Label2.Location = new System.Drawing.Point(159, 176);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(48, 16);
+            this.Label2.Size = new System.Drawing.Size(64, 16);
             this.Label2.TabIndex = 321;
             this.Label2.Text = "precio";
             this.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -310,7 +311,7 @@
             this.Label1.ForeColor = System.Drawing.Color.Lime;
             this.Label1.Location = new System.Drawing.Point(159, 96);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(48, 16);
+            this.Label1.Size = new System.Drawing.Size(64, 16);
             this.Label1.TabIndex = 320;
             this.Label1.Text = "precio";
             this.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -334,6 +335,7 @@
             this.bt5Centimos.Size = new System.Drawing.Size(66, 66);
             this.bt5Centimos.TabIndex = 318;
             this.bt5Centimos.Tag = "";
+            this.bt5Centimos.Click += new System.EventHandler(this.bt5Centimos_Click);
             // 
             // bt2Euros
             // 
@@ -342,6 +344,7 @@
             this.bt2Euros.Name = "bt2Euros";
             this.bt2Euros.Size = new System.Drawing.Size(66, 66);
             this.bt2Euros.TabIndex = 317;
+            this.bt2Euros.Click += new System.EventHandler(this.bt2Euros_Click);
             // 
             // bt1Euro
             // 
@@ -350,6 +353,7 @@
             this.bt1Euro.Name = "bt1Euro";
             this.bt1Euro.Size = new System.Drawing.Size(66, 66);
             this.bt1Euro.TabIndex = 316;
+            this.bt1Euro.Click += new System.EventHandler(this.bt1Euro_Click);
             // 
             // bt50Centimos
             // 
@@ -358,6 +362,7 @@
             this.bt50Centimos.Name = "bt50Centimos";
             this.bt50Centimos.Size = new System.Drawing.Size(66, 66);
             this.bt50Centimos.TabIndex = 315;
+            this.bt50Centimos.Click += new System.EventHandler(this.bt50Centimos_Click);
             // 
             // bt20Centimos
             // 
@@ -366,6 +371,7 @@
             this.bt20Centimos.Name = "bt20Centimos";
             this.bt20Centimos.Size = new System.Drawing.Size(66, 66);
             this.bt20Centimos.TabIndex = 314;
+            this.bt20Centimos.Click += new System.EventHandler(this.bt20Centimos_Click);
             // 
             // bt10Centimos
             // 
@@ -374,13 +380,14 @@
             this.bt10Centimos.Name = "bt10Centimos";
             this.bt10Centimos.Size = new System.Drawing.Size(66, 66);
             this.bt10Centimos.TabIndex = 313;
+            this.bt10Centimos.Click += new System.EventHandler(this.bt10Centimos_Click);
             // 
             // lblAGExistencias
             // 
             this.lblAGExistencias.BackColor = System.Drawing.Color.Black;
             this.lblAGExistencias.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAGExistencias.ForeColor = System.Drawing.Color.Lime;
-            this.lblAGExistencias.Location = new System.Drawing.Point(215, 592);
+            this.lblAGExistencias.Location = new System.Drawing.Point(229, 592);
             this.lblAGExistencias.Name = "lblAGExistencias";
             this.lblAGExistencias.Size = new System.Drawing.Size(35, 24);
             this.lblAGExistencias.TabIndex = 312;
@@ -394,7 +401,7 @@
             this.lblAGPrecio.ForeColor = System.Drawing.Color.Lime;
             this.lblAGPrecio.Location = new System.Drawing.Point(159, 592);
             this.lblAGPrecio.Name = "lblAGPrecio";
-            this.lblAGPrecio.Size = new System.Drawing.Size(48, 24);
+            this.lblAGPrecio.Size = new System.Drawing.Size(64, 24);
             this.lblAGPrecio.TabIndex = 311;
             this.lblAGPrecio.Tag = "6";
             this.lblAGPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -404,7 +411,7 @@
             this.lblAQExistencias.BackColor = System.Drawing.Color.Black;
             this.lblAQExistencias.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAQExistencias.ForeColor = System.Drawing.Color.Lime;
-            this.lblAQExistencias.Location = new System.Drawing.Point(215, 512);
+            this.lblAQExistencias.Location = new System.Drawing.Point(229, 512);
             this.lblAQExistencias.Name = "lblAQExistencias";
             this.lblAQExistencias.Size = new System.Drawing.Size(35, 24);
             this.lblAQExistencias.TabIndex = 310;
@@ -418,7 +425,7 @@
             this.lblAQPrecio.ForeColor = System.Drawing.Color.Lime;
             this.lblAQPrecio.Location = new System.Drawing.Point(159, 512);
             this.lblAQPrecio.Name = "lblAQPrecio";
-            this.lblAQPrecio.Size = new System.Drawing.Size(48, 24);
+            this.lblAQPrecio.Size = new System.Drawing.Size(64, 24);
             this.lblAQPrecio.TabIndex = 309;
             this.lblAQPrecio.Tag = "5";
             this.lblAQPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -428,7 +435,7 @@
             this.lblSPExistencias.BackColor = System.Drawing.Color.Black;
             this.lblSPExistencias.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSPExistencias.ForeColor = System.Drawing.Color.Lime;
-            this.lblSPExistencias.Location = new System.Drawing.Point(215, 432);
+            this.lblSPExistencias.Location = new System.Drawing.Point(229, 432);
             this.lblSPExistencias.Name = "lblSPExistencias";
             this.lblSPExistencias.Size = new System.Drawing.Size(35, 24);
             this.lblSPExistencias.TabIndex = 308;
@@ -442,7 +449,7 @@
             this.lblSPPrecio.ForeColor = System.Drawing.Color.Lime;
             this.lblSPPrecio.Location = new System.Drawing.Point(159, 432);
             this.lblSPPrecio.Name = "lblSPPrecio";
-            this.lblSPPrecio.Size = new System.Drawing.Size(48, 24);
+            this.lblSPPrecio.Size = new System.Drawing.Size(64, 24);
             this.lblSPPrecio.TabIndex = 307;
             this.lblSPPrecio.Tag = "4";
             this.lblSPPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -452,7 +459,7 @@
             this.lblFLExistencias.BackColor = System.Drawing.Color.Black;
             this.lblFLExistencias.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFLExistencias.ForeColor = System.Drawing.Color.Lime;
-            this.lblFLExistencias.Location = new System.Drawing.Point(215, 352);
+            this.lblFLExistencias.Location = new System.Drawing.Point(229, 352);
             this.lblFLExistencias.Name = "lblFLExistencias";
             this.lblFLExistencias.Size = new System.Drawing.Size(35, 24);
             this.lblFLExistencias.TabIndex = 306;
@@ -466,7 +473,7 @@
             this.lblFLPrecio.ForeColor = System.Drawing.Color.Lime;
             this.lblFLPrecio.Location = new System.Drawing.Point(159, 352);
             this.lblFLPrecio.Name = "lblFLPrecio";
-            this.lblFLPrecio.Size = new System.Drawing.Size(48, 24);
+            this.lblFLPrecio.Size = new System.Drawing.Size(64, 24);
             this.lblFLPrecio.TabIndex = 305;
             this.lblFLPrecio.Tag = "3";
             this.lblFLPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -476,7 +483,7 @@
             this.lblFNExistencias.BackColor = System.Drawing.Color.Black;
             this.lblFNExistencias.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFNExistencias.ForeColor = System.Drawing.Color.Lime;
-            this.lblFNExistencias.Location = new System.Drawing.Point(215, 272);
+            this.lblFNExistencias.Location = new System.Drawing.Point(229, 272);
             this.lblFNExistencias.Name = "lblFNExistencias";
             this.lblFNExistencias.Size = new System.Drawing.Size(35, 24);
             this.lblFNExistencias.TabIndex = 304;
@@ -490,7 +497,7 @@
             this.lblFNPrecio.ForeColor = System.Drawing.Color.Lime;
             this.lblFNPrecio.Location = new System.Drawing.Point(159, 272);
             this.lblFNPrecio.Name = "lblFNPrecio";
-            this.lblFNPrecio.Size = new System.Drawing.Size(48, 24);
+            this.lblFNPrecio.Size = new System.Drawing.Size(64, 24);
             this.lblFNPrecio.TabIndex = 303;
             this.lblFNPrecio.Tag = "2";
             this.lblFNPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -500,7 +507,7 @@
             this.lblCLExistencias.BackColor = System.Drawing.Color.Black;
             this.lblCLExistencias.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCLExistencias.ForeColor = System.Drawing.Color.Lime;
-            this.lblCLExistencias.Location = new System.Drawing.Point(215, 192);
+            this.lblCLExistencias.Location = new System.Drawing.Point(229, 192);
             this.lblCLExistencias.Name = "lblCLExistencias";
             this.lblCLExistencias.Size = new System.Drawing.Size(35, 24);
             this.lblCLExistencias.TabIndex = 302;
@@ -514,7 +521,7 @@
             this.lblCLPrecio.ForeColor = System.Drawing.Color.Lime;
             this.lblCLPrecio.Location = new System.Drawing.Point(159, 192);
             this.lblCLPrecio.Name = "lblCLPrecio";
-            this.lblCLPrecio.Size = new System.Drawing.Size(48, 24);
+            this.lblCLPrecio.Size = new System.Drawing.Size(64, 24);
             this.lblCLPrecio.TabIndex = 301;
             this.lblCLPrecio.Tag = "1";
             this.lblCLPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -524,7 +531,7 @@
             this.lblCCExistencias.BackColor = System.Drawing.Color.Black;
             this.lblCCExistencias.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCCExistencias.ForeColor = System.Drawing.Color.Lime;
-            this.lblCCExistencias.Location = new System.Drawing.Point(215, 112);
+            this.lblCCExistencias.Location = new System.Drawing.Point(229, 112);
             this.lblCCExistencias.Name = "lblCCExistencias";
             this.lblCCExistencias.Size = new System.Drawing.Size(35, 24);
             this.lblCCExistencias.TabIndex = 300;
@@ -538,7 +545,7 @@
             this.lblCCPrecio.ForeColor = System.Drawing.Color.Lime;
             this.lblCCPrecio.Location = new System.Drawing.Point(159, 112);
             this.lblCCPrecio.Name = "lblCCPrecio";
-            this.lblCCPrecio.Size = new System.Drawing.Size(48, 24);
+            this.lblCCPrecio.Size = new System.Drawing.Size(64, 24);
             this.lblCCPrecio.TabIndex = 299;
             this.lblCCPrecio.Tag = "0";
             this.lblCCPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -549,6 +556,7 @@
             this.btAquabona.Name = "btAquabona";
             this.btAquabona.Size = new System.Drawing.Size(40, 40);
             this.btAquabona.TabIndex = 298;
+            this.btAquabona.Click += new System.EventHandler(this.btAquabona_Click);
             // 
             // btAquarius
             // 
@@ -556,6 +564,7 @@
             this.btAquarius.Name = "btAquarius";
             this.btAquarius.Size = new System.Drawing.Size(40, 40);
             this.btAquarius.TabIndex = 297;
+            this.btAquarius.Click += new System.EventHandler(this.btAquarius_Click);
             // 
             // btSprite
             // 
@@ -563,6 +572,7 @@
             this.btSprite.Name = "btSprite";
             this.btSprite.Size = new System.Drawing.Size(40, 40);
             this.btSprite.TabIndex = 296;
+            this.btSprite.Click += new System.EventHandler(this.btSprite_Click);
             // 
             // btFantaLim
             // 
@@ -570,6 +580,7 @@
             this.btFantaLim.Name = "btFantaLim";
             this.btFantaLim.Size = new System.Drawing.Size(40, 40);
             this.btFantaLim.TabIndex = 295;
+            this.btFantaLim.Click += new System.EventHandler(this.btFantaLim_Click);
             // 
             // btFantaNar
             // 
@@ -577,6 +588,7 @@
             this.btFantaNar.Name = "btFantaNar";
             this.btFantaNar.Size = new System.Drawing.Size(40, 40);
             this.btFantaNar.TabIndex = 294;
+            this.btFantaNar.Click += new System.EventHandler(this.btFantaNar_Click);
             // 
             // btColaLight
             // 
@@ -584,6 +596,7 @@
             this.btColaLight.Name = "btColaLight";
             this.btColaLight.Size = new System.Drawing.Size(40, 40);
             this.btColaLight.TabIndex = 293;
+            this.btColaLight.Click += new System.EventHandler(this.btColaLight_Click);
             // 
             // btCocaCola
             // 
@@ -591,6 +604,7 @@
             this.btCocaCola.Name = "btCocaCola";
             this.btCocaCola.Size = new System.Drawing.Size(40, 40);
             this.btCocaCola.TabIndex = 292;
+            this.btCocaCola.Click += new System.EventHandler(this.btCocaCola_Click);
             // 
             // pbxSprite
             // 
@@ -744,6 +758,7 @@
             this.Controls.Add(this.pbxCocaCola);
             this.Controls.Add(this.pbxAquabona);
             this.Name = "fInicial";
+            this.Load += new System.EventHandler(this.fInicial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.gbCambio.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbxSprite)).EndInit();
