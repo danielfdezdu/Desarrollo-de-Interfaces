@@ -43,111 +43,101 @@ namespace _017_MaquinaBebidas
         {
             foreach (Control cC in Controls)
             {
-                if (cC.Name.StartsWith("lbl"))
+                if (Array.IndexOf(aLblPrecio, cC.Name) >= 0)
                 {
-                    if(Array.IndexOf(aLblPrecio, cC.Name) >= 0)
+                    cC.Text = string.Format("{0:#0.00}", prezoBebidas[Array.IndexOf(aLblPrecio, cC.Name)].ToString()) + " €";
+                }
+                else if (Array.IndexOf(aLblStock, cC.Name) >= 0)
+                {
+                    cC.Text = stockBebidas[Array.IndexOf(aLblStock, cC.Name)].ToString();
+                }
+                else if (Array.IndexOf(nomeBotons, cC.Name) >= 0)
+                {
+                    if (stockBebidas[Array.IndexOf(nomeBotons, cC.Name)] == 0)
                     {
-                        cC.Text = string.Format("{0:#00.00}", prezoBebidas[Array.IndexOf(aLblPrecio, cC.Name)].ToString()) + " €";
+                        cC.BackColor = Color.Red;
+                        cC.Enabled = false;
+                    }
+                    else
+                    {
+                        cC.BackColor = Color.Lime;
+                        cC.Enabled = true;
                     }
                 }
-                else if (cC.Name.StartsWith("bt"))
-                {
-
-                }
             }
+        }
 
-            foreach (Control cC in Controls)
+        private void monedero(object sender, EventArgs e)
+        {
+            switch (((Button)sender).Name)
             {
-                if (cC.Name.StartsWith("lbl"))
-                {
-                    if (Array.IndexOf(aLblStock, cC.Name) >= 0)
-                    {
-                        cC.Text = string.Format("{0:#00.00}", stockBebidas[Array.IndexOf(aLblStock, cC.Name)].ToString());
-                    }
-                }
-                else if (cC.Name.StartsWith("bt"))
-                {
+                case "bt2Euros":
+                    credito += 2.00;
+                    cajaMonedas[0] += 1;
+                    break;
+                case "bt1Euro":
+                    credito += 1.00;
+                    cajaMonedas[0] += 1;
+                    break;
+                case "bt50Centimos":
+                    credito += 0.50;
+                    cajaMonedas[0] += 1;
+                    break;
+                case "bt20Centimos":
+                    credito += 0.20;
+                    cajaMonedas[0] += 1;
+                    break;
+                case "bt10Centimos":
+                    credito += 0.10;
+                    cajaMonedas[0] += 1;
+                    break;
+                case "bt5Centimos":
+                    credito += 0.05;
+                    cajaMonedas[0] += 1;
+                    break;
+            }
+            lblCredito.Text = string.Format("{0:#0.00}", credito);
+        }
 
+        private void ComprandoBebidas(object sender, EventArgs e)
+        {
+            int nArrayBotones = Array.IndexOf(nomeBotons, ((Button)sender).Name);
+
+            // revisar crédito
+            if (credito >= prezoBebidas[nArrayBotones])
+            {
+                // hay stock?
+                if (stockBebidas[nArrayBotones] > 0)
+                {
+                    // si hay cambio
+                    cambioDevolver = Math.Round(credito - prezoBebidas[nArrayBotones], 2);
+                    // mirar si se puede dar cambio
+
+                    //if ()
+                    //{
+
+                    //} else
+                    //{
+                    //    lblMensaxe.Text = "Agotado camio";
+                    //}
+                }
+                else
+                {
+                    lblMensaxe.Text = "Agotado producto";
                 }
             }
-        }
-
-        private void bt2Euros_Click(object sender, EventArgs e)
-        { 
-            credito += 2;
-            lblCredito.Text = credito.ToString();
-        }
-
-        private void bt1Euro_Click(object sender, EventArgs e)
-        {
-            credito += 1;
-            lblCredito.Text = credito.ToString();
-        }
-
-        private void bt50Centimos_Click(object sender, EventArgs e)
-        {
-            credito += 0.50;
-            lblCredito.Text = credito.ToString();
-        }
-
-        private void bt20Centimos_Click(object sender, EventArgs e)
-        {
-            credito += 0.20;
-            lblCredito.Text = credito.ToString();
-        }
-
-        private void bt10Centimos_Click(object sender, EventArgs e)
-        {
-            credito += 0.10;
-            lblCredito.Text = credito.ToString();
-        }
-
-        private void bt5Centimos_Click(object sender, EventArgs e)
-        {
-            credito += 0.05;
-            lblCredito.Text = credito.ToString();
+            else
+            {
+                lblMensaxe.Text = "Crédito insuficiente";
+            }
         }
 
         private void btRecuperar_Click(object sender, EventArgs e)
         {
-            credito = 0;
-            lblCredito.Text = credito.ToString();
+            lblCredito.Text = "0,00";
+            credito = 0.00;
         }
 
-        private void btCocaCola_Click(object sender, EventArgs e)
-        {
-            btCocaCola.BackColor = Color.Lime;
-        }
-
-        private void btColaLight_Click(object sender, EventArgs e)
-        {
-            btColaLight.BackColor = Color.Lime;
-        }
-
-        private void btFantaNar_Click(object sender, EventArgs e)
-        {
-            btFantaNar.BackColor = Color.Lime;
-        }
-
-        private void btFantaLim_Click(object sender, EventArgs e)
-        {
-            btFantaLim.BackColor = Color.Lime;
-        }
-
-        private void btSprite_Click(object sender, EventArgs e)
-        {
-            btSprite.BackColor = Color.Lime;
-        }
-
-        private void btAquarius_Click(object sender, EventArgs e)
-        {
-            btAquarius.BackColor = Color.Lime;
-        }
-
-        private void btAquabona_Click(object sender, EventArgs e)
-        {
-            btAquabona.BackColor = Color.Lime;
-        }
     }
 }
 

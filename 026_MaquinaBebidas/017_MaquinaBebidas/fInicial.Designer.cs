@@ -335,7 +335,7 @@
             this.bt5Centimos.Size = new System.Drawing.Size(66, 66);
             this.bt5Centimos.TabIndex = 318;
             this.bt5Centimos.Tag = "";
-            this.bt5Centimos.Click += new System.EventHandler(this.bt5Centimos_Click);
+            this.bt5Centimos.Click += new System.EventHandler(this.monedero);
             // 
             // bt2Euros
             // 
@@ -344,7 +344,7 @@
             this.bt2Euros.Name = "bt2Euros";
             this.bt2Euros.Size = new System.Drawing.Size(66, 66);
             this.bt2Euros.TabIndex = 317;
-            this.bt2Euros.Click += new System.EventHandler(this.bt2Euros_Click);
+            this.bt2Euros.Click += new System.EventHandler(this.monedero);
             // 
             // bt1Euro
             // 
@@ -353,7 +353,7 @@
             this.bt1Euro.Name = "bt1Euro";
             this.bt1Euro.Size = new System.Drawing.Size(66, 66);
             this.bt1Euro.TabIndex = 316;
-            this.bt1Euro.Click += new System.EventHandler(this.bt1Euro_Click);
+            this.bt1Euro.Click += new System.EventHandler(this.monedero);
             // 
             // bt50Centimos
             // 
@@ -362,7 +362,7 @@
             this.bt50Centimos.Name = "bt50Centimos";
             this.bt50Centimos.Size = new System.Drawing.Size(66, 66);
             this.bt50Centimos.TabIndex = 315;
-            this.bt50Centimos.Click += new System.EventHandler(this.bt50Centimos_Click);
+            this.bt50Centimos.Click += new System.EventHandler(this.monedero);
             // 
             // bt20Centimos
             // 
@@ -371,7 +371,7 @@
             this.bt20Centimos.Name = "bt20Centimos";
             this.bt20Centimos.Size = new System.Drawing.Size(66, 66);
             this.bt20Centimos.TabIndex = 314;
-            this.bt20Centimos.Click += new System.EventHandler(this.bt20Centimos_Click);
+            this.bt20Centimos.Click += new System.EventHandler(this.monedero);
             // 
             // bt10Centimos
             // 
@@ -380,7 +380,7 @@
             this.bt10Centimos.Name = "bt10Centimos";
             this.bt10Centimos.Size = new System.Drawing.Size(66, 66);
             this.bt10Centimos.TabIndex = 313;
-            this.bt10Centimos.Click += new System.EventHandler(this.bt10Centimos_Click);
+            this.bt10Centimos.Click += new System.EventHandler(this.monedero);
             // 
             // lblAGExistencias
             // 
@@ -556,7 +556,6 @@
             this.btAquabona.Name = "btAquabona";
             this.btAquabona.Size = new System.Drawing.Size(40, 40);
             this.btAquabona.TabIndex = 298;
-            this.btAquabona.Click += new System.EventHandler(this.btAquabona_Click);
             // 
             // btAquarius
             // 
@@ -564,7 +563,6 @@
             this.btAquarius.Name = "btAquarius";
             this.btAquarius.Size = new System.Drawing.Size(40, 40);
             this.btAquarius.TabIndex = 297;
-            this.btAquarius.Click += new System.EventHandler(this.btAquarius_Click);
             // 
             // btSprite
             // 
@@ -572,7 +570,6 @@
             this.btSprite.Name = "btSprite";
             this.btSprite.Size = new System.Drawing.Size(40, 40);
             this.btSprite.TabIndex = 296;
-            this.btSprite.Click += new System.EventHandler(this.btSprite_Click);
             // 
             // btFantaLim
             // 
@@ -580,7 +577,6 @@
             this.btFantaLim.Name = "btFantaLim";
             this.btFantaLim.Size = new System.Drawing.Size(40, 40);
             this.btFantaLim.TabIndex = 295;
-            this.btFantaLim.Click += new System.EventHandler(this.btFantaLim_Click);
             // 
             // btFantaNar
             // 
@@ -588,7 +584,6 @@
             this.btFantaNar.Name = "btFantaNar";
             this.btFantaNar.Size = new System.Drawing.Size(40, 40);
             this.btFantaNar.TabIndex = 294;
-            this.btFantaNar.Click += new System.EventHandler(this.btFantaNar_Click);
             // 
             // btColaLight
             // 
@@ -596,7 +591,6 @@
             this.btColaLight.Name = "btColaLight";
             this.btColaLight.Size = new System.Drawing.Size(40, 40);
             this.btColaLight.TabIndex = 293;
-            this.btColaLight.Click += new System.EventHandler(this.btColaLight_Click);
             // 
             // btCocaCola
             // 
@@ -604,7 +598,6 @@
             this.btCocaCola.Name = "btCocaCola";
             this.btCocaCola.Size = new System.Drawing.Size(40, 40);
             this.btCocaCola.TabIndex = 292;
-            this.btCocaCola.Click += new System.EventHandler(this.btCocaCola_Click);
             // 
             // pbxSprite
             // 
