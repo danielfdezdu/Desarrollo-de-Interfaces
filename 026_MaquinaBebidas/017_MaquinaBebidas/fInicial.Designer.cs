@@ -556,6 +556,7 @@
             this.btAquabona.Name = "btAquabona";
             this.btAquabona.Size = new System.Drawing.Size(40, 40);
             this.btAquabona.TabIndex = 298;
+            this.btAquabona.Click += new System.EventHandler(this.ComprandoBebidas);
             // 
             // btAquarius
             // 
@@ -563,6 +564,7 @@
             this.btAquarius.Name = "btAquarius";
             this.btAquarius.Size = new System.Drawing.Size(40, 40);
             this.btAquarius.TabIndex = 297;
+            this.btAquarius.Click += new System.EventHandler(this.ComprandoBebidas);
             // 
             // btSprite
             // 
@@ -570,6 +572,7 @@
             this.btSprite.Name = "btSprite";
             this.btSprite.Size = new System.Drawing.Size(40, 40);
             this.btSprite.TabIndex = 296;
+            this.btSprite.Click += new System.EventHandler(this.ComprandoBebidas);
             // 
             // btFantaLim
             // 
@@ -577,6 +580,7 @@
             this.btFantaLim.Name = "btFantaLim";
             this.btFantaLim.Size = new System.Drawing.Size(40, 40);
             this.btFantaLim.TabIndex = 295;
+            this.btFantaLim.Click += new System.EventHandler(this.ComprandoBebidas);
             // 
             // btFantaNar
             // 
@@ -584,6 +588,7 @@
             this.btFantaNar.Name = "btFantaNar";
             this.btFantaNar.Size = new System.Drawing.Size(40, 40);
             this.btFantaNar.TabIndex = 294;
+            this.btFantaNar.Click += new System.EventHandler(this.ComprandoBebidas);
             // 
             // btColaLight
             // 
@@ -591,6 +596,7 @@
             this.btColaLight.Name = "btColaLight";
             this.btColaLight.Size = new System.Drawing.Size(40, 40);
             this.btColaLight.TabIndex = 293;
+            this.btColaLight.Click += new System.EventHandler(this.ComprandoBebidas);
             // 
             // btCocaCola
             // 
@@ -598,6 +604,7 @@
             this.btCocaCola.Name = "btCocaCola";
             this.btCocaCola.Size = new System.Drawing.Size(40, 40);
             this.btCocaCola.TabIndex = 292;
+            this.btCocaCola.Click += new System.EventHandler(this.ComprandoBebidas);
             // 
             // pbxSprite
             // 

@@ -112,6 +112,7 @@ namespace _017_MaquinaBebidas
                     // si hay cambio
                     cambioDevolver = Math.Round(credito - prezoBebidas[nArrayBotones], 2);
                     // mirar si se puede dar cambio
+                    darCambio();
 
                     if (cambioDevolver == 0)
                     {
@@ -119,10 +120,18 @@ namespace _017_MaquinaBebidas
                         credito = 0;
                         lblCredito.Text = credito.ToString();
                         verPrecioStock();
-                        darCambio();
+                        verCambio();
                     } else
                     {
-                        lblMensaxe.Text = "Agotado camio";
+                        lblMensaxe.Text = "Cambio agotado";
+
+                        for (int i = 0; i < cambioMonedas.GetLength(0); i++)
+                        {
+                            if (cambioMonedas[i] > 0)
+                            {
+                                cajaMonedas[i] += cambioMonedas[i];
+                            }
+                        }
                     }
                 }
                 else
@@ -140,6 +149,7 @@ namespace _017_MaquinaBebidas
         {
             lblCredito.Text = "0,00";
             credito = 0.00;
+            lblMensaxe.Text = "";
         }
 
         private void darCambio()
