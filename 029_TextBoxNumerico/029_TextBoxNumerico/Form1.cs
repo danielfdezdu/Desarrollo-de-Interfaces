@@ -16,5 +16,23 @@ namespace _029_TextBoxNumerico
         {
             InitializeComponent();
         }
+
+        char[] aTexto;
+
+        private void txbNumero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (e.KeyChar == ',')
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
