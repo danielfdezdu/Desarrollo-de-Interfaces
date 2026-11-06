@@ -57,7 +57,7 @@
             this.mnSalir});
             this.mn.Location = new System.Drawing.Point(0, 0);
             this.mn.Name = "mn";
-            this.mn.Size = new System.Drawing.Size(734, 24);
+            this.mn.Size = new System.Drawing.Size(700, 24);
             this.mn.TabIndex = 0;
             this.mn.Text = "menuStrip1";
             // 
@@ -75,8 +75,9 @@
             // mnArchivoAbrir
             // 
             this.mnArchivoAbrir.Name = "mnArchivoAbrir";
-            this.mnArchivoAbrir.Size = new System.Drawing.Size(116, 22);
+            this.mnArchivoAbrir.Size = new System.Drawing.Size(152, 22);
             this.mnArchivoAbrir.Text = "Abrir";
+            this.mnArchivoAbrir.Click += new System.EventHandler(this.mnArchivoAbrir_Click);
             // 
             // mnArchivoGuardar
             // 
@@ -85,7 +86,7 @@
             this.mnArchivoGuardarPDF,
             this.mnArchivoGuardarTXT});
             this.mnArchivoGuardar.Name = "mnArchivoGuardar";
-            this.mnArchivoGuardar.Size = new System.Drawing.Size(116, 22);
+            this.mnArchivoGuardar.Size = new System.Drawing.Size(152, 22);
             this.mnArchivoGuardar.Text = "Guardar";
             // 
             // mnArchivoGuardarXML
@@ -109,13 +110,13 @@
             // mnArchivoCerrar
             // 
             this.mnArchivoCerrar.Name = "mnArchivoCerrar";
-            this.mnArchivoCerrar.Size = new System.Drawing.Size(116, 22);
+            this.mnArchivoCerrar.Size = new System.Drawing.Size(152, 22);
             this.mnArchivoCerrar.Text = "Cerrar";
             // 
             // mnArchivoSalir
             // 
             this.mnArchivoSalir.Name = "mnArchivoSalir";
-            this.mnArchivoSalir.Size = new System.Drawing.Size(116, 22);
+            this.mnArchivoSalir.Size = new System.Drawing.Size(152, 22);
             this.mnArchivoSalir.Text = "Salir";
             // 
             // mnEdicion
@@ -140,7 +141,7 @@
             this.toolStripComboBox1});
             this.mnBt.Location = new System.Drawing.Point(0, 24);
             this.mnBt.Name = "mnBt";
-            this.mnBt.Size = new System.Drawing.Size(734, 25);
+            this.mnBt.Size = new System.Drawing.Size(700, 25);
             this.mnBt.TabIndex = 1;
             this.mnBt.Text = "toolStrip1";
             // 
@@ -152,6 +153,7 @@
             this.mnBtAbrir.Name = "mnBtAbrir";
             this.mnBtAbrir.Size = new System.Drawing.Size(23, 22);
             this.mnBtAbrir.Text = "Abrir archivo";
+            this.mnBtAbrir.Click += new System.EventHandler(this.mnArchivoAbrir_Click);
             // 
             // mnBtImprimir
             // 
@@ -170,6 +172,7 @@
             this.mnBtSair.Name = "mnBtSair";
             this.mnBtSair.Size = new System.Drawing.Size(23, 22);
             this.mnBtSair.Text = "Cerrar";
+            this.mnBtSair.Click += new System.EventHandler(this.mnSalir_Click);
             // 
             // toolStripComboBox1
             // 
@@ -180,9 +183,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 563);
+            this.ClientSize = new System.Drawing.Size(700, 561);
             this.Controls.Add(this.mnBt);
             this.Controls.Add(this.mn);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.mn;
             this.Name = "Form1";
             this.Text = "Formulario principal";
