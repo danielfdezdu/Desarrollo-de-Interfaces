@@ -69,6 +69,7 @@
             this.btCancelarStock.Size = new System.Drawing.Size(72, 32);
             this.btCancelarStock.TabIndex = 79;
             this.btCancelarStock.Text = "Cancelar";
+            this.btCancelarStock.Click += new System.EventHandler(this.btCancelarStock_Click);
             // 
             // btAceptarStock
             // 
@@ -78,6 +79,7 @@
             this.btAceptarStock.Size = new System.Drawing.Size(72, 32);
             this.btAceptarStock.TabIndex = 78;
             this.btAceptarStock.Text = "Aceptar";
+            this.btAceptarStock.Click += new System.EventHandler(this.btAceptarStock_Click);
             // 
             // nudAquabona
             // 
@@ -277,6 +279,7 @@
             this.Controls.Add(this.pbCocaCola);
             this.Name = "f_Stock";
             this.Text = "administración stock";
+            this.Load += new System.EventHandler(this.f_Stock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudAquabona)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAquarius)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSprite)).EndInit();

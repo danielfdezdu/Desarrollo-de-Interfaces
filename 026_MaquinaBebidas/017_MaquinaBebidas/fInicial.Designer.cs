@@ -668,6 +668,7 @@
             this.btAdministrarStock.TabIndex = 338;
             this.btAdministrarStock.Text = "stock";
             this.btAdministrarStock.UseVisualStyleBackColor = true;
+            this.btAdministrarStock.Click += new System.EventHandler(this.btAdministrarStock_Click);
             // 
             // btAdministrarPrecio
             // 
@@ -677,6 +678,7 @@
             this.btAdministrarPrecio.TabIndex = 339;
             this.btAdministrarPrecio.Text = "precio";
             this.btAdministrarPrecio.UseVisualStyleBackColor = true;
+            this.btAdministrarPrecio.Click += new System.EventHandler(this.btAdministrarPrecio_Click);
             // 
             // btAdministrarMoedas
             // 
@@ -686,6 +688,7 @@
             this.btAdministrarMoedas.TabIndex = 340;
             this.btAdministrarMoedas.Text = "moedas";
             this.btAdministrarMoedas.UseVisualStyleBackColor = true;
+            this.btAdministrarMoedas.Click += new System.EventHandler(this.btAdministrarMoedas_Click);
             // 
             // pbxAquarius
             // 

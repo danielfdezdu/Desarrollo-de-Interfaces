@@ -183,6 +183,25 @@ namespace _017_MaquinaBebidas
             }
         }
 
+        private void btAdministrarStock_Click(object sender, EventArgs e)
+        {
+            f_Stock fStock = new f_Stock(stockBebidas);
+            fStock.ShowDialog();
+            verPrecioStock();
+        }
+
+        private void btAdministrarPrecio_Click(object sender, EventArgs e)
+        {
+            f_Precios fPrecios = new f_Precios(prezoBebidas);
+            fPrecios.ShowDialog();
+            verPrecioStock();
+        }
+
+        private void btAdministrarMoedas_Click(object sender, EventArgs e)
+        {
+            f_Monedas fMon = new f_Monedas(cambioMonedas);
+            fMon.ShowDialog();
+        }
     }
 }
 

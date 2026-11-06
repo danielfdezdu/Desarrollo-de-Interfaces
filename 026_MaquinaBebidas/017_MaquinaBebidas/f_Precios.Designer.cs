@@ -132,6 +132,7 @@
             this.btCancelar.Size = new System.Drawing.Size(72, 32);
             this.btCancelar.TabIndex = 63;
             this.btCancelar.Text = "Cancelar";
+            this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
             // btAceptar
             // 
@@ -141,6 +142,7 @@
             this.btAceptar.Size = new System.Drawing.Size(72, 32);
             this.btAceptar.TabIndex = 62;
             this.btAceptar.Text = "Aceptar";
+            this.btAceptar.Click += new System.EventHandler(this.btAceptar_Click);
             // 
             // pbAquabona
             // 
@@ -235,6 +237,7 @@
             this.Controls.Add(this.pbCocaCola);
             this.Name = "f_Precios";
             this.Text = "Cambiar Precio";
+            this.Load += new System.EventHandler(this.f_Precios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbAquabona)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSprite)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAquarius)).EndInit();

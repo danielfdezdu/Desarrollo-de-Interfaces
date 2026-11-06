@@ -209,6 +209,7 @@
             this.btCancelar.Size = new System.Drawing.Size(72, 32);
             this.btCancelar.TabIndex = 57;
             this.btCancelar.Text = "Cancelar";
+            this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
             // btAceptar
             // 
@@ -218,6 +219,7 @@
             this.btAceptar.Size = new System.Drawing.Size(72, 32);
             this.btAceptar.TabIndex = 56;
             this.btAceptar.Text = "Aceptar";
+            this.btAceptar.Click += new System.EventHandler(this.btAceptar_Click);
             // 
             // f_Monedas
             // 
