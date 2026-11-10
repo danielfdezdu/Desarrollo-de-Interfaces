@@ -27,6 +27,25 @@ namespace _029_TextBoxNumerico
             }
             else if (e.KeyChar == ',')
             {
+                if (txbNumero.Text.Contains(','))
+                {
+                    e.Handled = false;
+                }
+                else if (txbNumero.TextLength == 0)
+                {
+                    txbNumero.Text = "0,";
+                    e.Handled = true;
+                    txbNumero.SelectionStart = txbNumero.TextLength;
+                }
+                else if (txbNumero.Text == "-")
+                {
+                    txbNumero.Text = "0,";
+                    e.Handled = true;
+                    txbNumero.SelectionStart = txbNumero.TextLength;
+                }
+            }
+            else if (e.KeyChar == '-' && txbNumero.TextLength == 0)
+            {
                 e.Handled = false;
             }
             else
