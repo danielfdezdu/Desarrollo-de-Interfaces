@@ -28,6 +28,7 @@ namespace _030_Bicicleta
                 _marca = value;
             }
         }
+
         public string Modelo
         {
             get
@@ -40,6 +41,7 @@ namespace _030_Bicicleta
                 _modelo = value;
             }
         }
+
         public short Velocidad
         {
             get
